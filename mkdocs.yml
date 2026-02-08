@@ -41,3 +41,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+# Para habilitar estatísticas, crie um ID no Google Analytics e preencha abaixo:
+# extra:
+#   analytics:
+#     provider: google
+#     property: !ENV [GA_ID, "G-XXXXXXXXXX"] # Busca nas variáveis de ambiente ou usa o padrão
