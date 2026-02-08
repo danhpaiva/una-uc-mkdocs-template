@@ -6,10 +6,26 @@ theme:
   name: material
   language: pt-BR
   palette:
-    primary: indigo
-    accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
   features:
     - navigation.sections
+    - navigation.expand # Deixa o menu lateral aberto por padrão
+    - navigation.top # Botão "Voltar ao topo" automático
+    - navigation.tracking # Atualiza a URL conforme o aluno rola a página
+    - content.code.copy # Botão de copiar código em um clique
 
 nav:
   - Home: index.md
@@ -18,3 +34,10 @@ nav:
 plugins:
   - search
   - git-revision-date-localized
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
