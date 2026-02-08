@@ -17,6 +17,6 @@ nav:
 
 plugins:
   - search
-  - mkdocs-git-revision-date-localized-plugin:
-      locale: pt_BR
-      type: timeago
+  # - mkdocs-git-revision-date-localized-plugin:
+  #     locale: pt_BR
+  #     type: timeago
