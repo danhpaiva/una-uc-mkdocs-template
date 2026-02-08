@@ -10,7 +10,7 @@ Template padrão para documentação de Unidades Curriculares (UC) utilizando **
    python -m venv venv
    .\venv\Scripts\Activate  # Windows
    pip install -r requirements.txt
-  ```
+
 4. Inicie o servidor local: mkdocs serve.
 
 ### 🛠️ Tecnologias inclusas
@@ -33,4 +33,3 @@ git push origin develop
 git checkout main
 git merge develop
 git push origin main
-```
