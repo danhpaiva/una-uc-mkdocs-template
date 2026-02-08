@@ -29,7 +29,11 @@ theme:
 
 nav:
   - Home: index.md
-  - Guia de Início: setup.md
+  - Guia do Professor: setup.md
+  - 📖 Aulas:
+      - Introdução: aulas/01-introducao.md
+  - 📝 Atividades:
+      - Projeto 01: trabalhos/projeto-01.md
 
 plugins:
   - search
