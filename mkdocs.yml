@@ -48,7 +48,8 @@ exclude_docs: |
   rascunhos/
 
 plugins:
-  - search
+  - search:
+      lang: pt
   - git-revision-date-localized
 
 markdown_extensions:
