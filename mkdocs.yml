@@ -36,6 +36,10 @@ nav:
   - 📝 Atividades:
       - Projeto 01: trabalhos/projeto-01.md
 
+# Rascunhos ficam fora do site publicado (continuam versionados no repo)
+exclude_docs: |
+  rascunhos/
+
 plugins:
   - search
   - git-revision-date-localized
