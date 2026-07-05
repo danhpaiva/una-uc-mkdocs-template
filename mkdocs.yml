@@ -3,6 +3,11 @@ site_name: "Sua Disciplina - UNA"
 site_url: https://SEU_USUARIO.github.io/SEU_REPOSITORIO/
 site_author: Seu Nome
 
+# Link para o repositório e botão "editar esta página" (troque pelos seus dados)
+repo_url: https://github.com/SEU_USUARIO/SEU_REPOSITORIO
+repo_name: SEU_USUARIO/SEU_REPOSITORIO
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   language: pt-BR
@@ -27,6 +32,7 @@ theme:
     - navigation.top # Botão "Voltar ao topo" automático
     - navigation.tracking # Atualiza a URL conforme o aluno rola a página
     - content.code.copy # Botão de copiar código em um clique
+    - content.action.edit # Botão "editar esta página" (usa repo_url + edit_uri)
 
 nav:
   - Home: index.md
