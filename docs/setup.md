@@ -49,10 +49,15 @@ Acesse `http://127.0.0.1:8000` no seu navegador.
 
 O deploy está configurado via **GitHub Actions**. Para que funcione corretamente em seu próprio repositório:
 
-1. Vá em **Settings > Actions > General**.
-2. Em **Workflow permissions**, selecione **"Read and write permissions"** e salve.
-3. Vá em **Settings > Pages** e em **Build and deployment > Source**, escolha **"GitHub Actions"**.
-4. Ao fazer um `git push` para as branches `main` ou `develop`, o site será atualizado automaticamente.
+!!! danger "Passo essencial: fonte do Pages"
+    Em **Settings > Pages**, no campo **Build and deployment > Source**, selecione **"GitHub Actions"** — **não** deixe em *"Deploy from a branch"*. É a causa mais comum do erro `Deployment failed, try again later`.
+
+1. Vá em **Settings > Pages > Build and deployment > Source** e escolha **"GitHub Actions"**.
+2. Vá em **Settings > Actions > General**; em **Workflow permissions**, selecione **"Read and write permissions"** e salve.
+3. Faça um `git push` para a branch **`main`**: o site é construído e publicado automaticamente. Pushes na `develop` apenas validam o build (não publicam).
+
+!!! question "Deu `Deployment failed, try again later`?"
+    Quase sempre a fonte do Pages ainda está em *"Deploy from a branch"* — volte ao passo 1. Depois de corrigir, use **Actions > (workflow) > Re-run jobs** ou faça um novo push na `main`. O aviso sobre *Node 20* que aparece no log é apenas informativo e **não** é a causa.
 
 ---
 
