@@ -1,5 +1,6 @@
-# MkDocs — site gerado
+# MkDocs — site gerado e cache de plugins
 /site/
+.cache/
 
 # Python
 __pycache__/

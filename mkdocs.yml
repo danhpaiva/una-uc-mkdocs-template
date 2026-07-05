@@ -13,25 +13,36 @@ theme:
   language: pt-BR
   logo: assets/animaeducacao.jpg
   favicon: assets/animaeducacao.jpg
+  font:
+    text: Inter # Fonte de texto do site
+    code: JetBrains Mono # Fonte monoespaçada dos blocos de código
   palette:
+    # 3 estados: automático (segue o sistema) -> claro -> escuro
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Mudar para modo claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Mudar para modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/brightness-4
-        name: Mudar para modo claro
+        name: Mudar para modo automático
   features:
+    - navigation.tabs # Seções de topo viram abas no cabeçalho
+    - navigation.indexes # Permite página-índice em cada seção
     - navigation.sections
     - navigation.expand # Deixa o menu lateral aberto por padrão
     - navigation.top # Botão "Voltar ao topo" automático
+    - toc.follow # O sumário lateral acompanha a rolagem
     - navigation.tracking # Atualiza a URL conforme o aluno rola a página
     - content.code.copy # Botão de copiar código em um clique
     - content.action.edit # Botão "editar esta página" (usa repo_url + edit_uri)
