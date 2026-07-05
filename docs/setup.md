@@ -11,8 +11,8 @@ Para editar e visualizar o site em sua máquina:
 1. **Clone o repositório:**
 
 ```bash
-git clone [https://github.com/danhpaiva/una-uc-mkdocs-template.git](https://github.com/danhpaiva/una-uc-mkdocs-template.git)
-cd una-uc-mkdocs-template
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+cd SEU_REPOSITORIO
 
 ```
 
