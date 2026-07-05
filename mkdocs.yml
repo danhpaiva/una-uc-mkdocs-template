@@ -11,6 +11,8 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: pt-BR
+  logo: assets/animaeducacao.jpg
+  favicon: assets/animaeducacao.jpg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
