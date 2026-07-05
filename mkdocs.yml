@@ -33,6 +33,7 @@ nav:
   - Guia do Professor: setup.md
   - 📖 Aulas:
       - Introdução: aulas/01-introducao.md
+      - CI/CD com GitHub Actions: aulas/02-cicd.md
   - 📝 Atividades:
       - Projeto 01: trabalhos/projeto-01.md
 
