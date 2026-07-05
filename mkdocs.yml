@@ -1,10 +1,18 @@
 site_name: "Sua Disciplina - UNA"
-site_url: https://danhpaiva.github.io/una-uc-mkdocs-template/
-site_author: Daniel Paiva
+# Troque para a URL do seu Pages: https://SEU_USUARIO.github.io/SEU_REPOSITORIO/
+site_url: https://SEU_USUARIO.github.io/SEU_REPOSITORIO/
+site_author: Seu Nome
+
+# Link para o repositório e botão "editar esta página" (troque pelos seus dados)
+repo_url: https://github.com/SEU_USUARIO/SEU_REPOSITORIO
+repo_name: SEU_USUARIO/SEU_REPOSITORIO
+edit_uri: edit/main/docs/
 
 theme:
   name: material
   language: pt-BR
+  logo: assets/animaeducacao.jpg
+  favicon: assets/animaeducacao.jpg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -26,17 +34,29 @@ theme:
     - navigation.top # Botão "Voltar ao topo" automático
     - navigation.tracking # Atualiza a URL conforme o aluno rola a página
     - content.code.copy # Botão de copiar código em um clique
+    - content.action.edit # Botão "editar esta página" (usa repo_url + edit_uri)
+    - content.tabs.link # Sincroniza abas de mesmo rótulo na página inteira
+    - navigation.instant # Navegação SPA: troca de página sem recarregar tudo
+    - navigation.instant.progress # Barra de progresso ao carregar páginas
+    - search.suggest # Sugere a continuação da palavra na busca
+    - search.highlight # Realça os termos buscados na página
 
 nav:
   - Home: index.md
   - Guia do Professor: setup.md
   - 📖 Aulas:
       - Introdução: aulas/01-introducao.md
+      - CI/CD com GitHub Actions: aulas/02-cicd.md
   - 📝 Atividades:
       - Projeto 01: trabalhos/projeto-01.md
 
+# Rascunhos ficam fora do site publicado (continuam versionados no repo)
+exclude_docs: |
+  rascunhos/
+
 plugins:
-  - search
+  - search:
+      lang: pt
   - git-revision-date-localized
 
 markdown_extensions:
