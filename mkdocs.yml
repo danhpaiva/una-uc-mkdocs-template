@@ -35,6 +35,11 @@ theme:
     - navigation.tracking # Atualiza a URL conforme o aluno rola a página
     - content.code.copy # Botão de copiar código em um clique
     - content.action.edit # Botão "editar esta página" (usa repo_url + edit_uri)
+    - content.tabs.link # Sincroniza abas de mesmo rótulo na página inteira
+    - navigation.instant # Navegação SPA: troca de página sem recarregar tudo
+    - navigation.instant.progress # Barra de progresso ao carregar páginas
+    - search.suggest # Sugere a continuação da palavra na busca
+    - search.highlight # Realça os termos buscados na página
 
 nav:
   - Home: index.md
